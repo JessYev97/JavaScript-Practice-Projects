@@ -6,26 +6,52 @@
   <title>Calculator</title>
 </head>
 <body>
-  <button onclick="
-
-    ">1</button>
-  <button onclick="
-
-  ">2</button>
-  <button onclick="
-
-  ">3</button>
-  <button onclick="
-
-  ">+</button>
-  <button onclick="
-    
-  ">=</button>
+  <p> Calculator </p>
+  <p>
+    <button onclick="
+      calculation += '1';
+      console.log(`result is: ${calculation}`); 
+      ">1</button>
+    <button onclick="
+      calculation += '2';
+      console.log(`result is: ${calculation}`);
+    ">2</button>
+    <button onclick="
+      calculation += '3';
+      console.log(`result is: ${calculation}`);
+    ">3</button>
+    <button onclick="
+      console.log(' + ');
+    ">+</button>
+  </p>
+  <p>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>-</button>
+  </p>
+  <p>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>*</button>
+  </p>
+  <p>
+    <button>0</button>
+    <button>.</button>
+    <button>=</button>
+    <button>/</button>
+  </p>
+  <p>
+      <button onclick="
+        
+        ">Clear</button>
+  </p>
 
   <script>
-
-let calculation = '';
-
+let calculation = ''; 
+ 
+console.log(calculation); 
   </script>
 </body>
 </html>
