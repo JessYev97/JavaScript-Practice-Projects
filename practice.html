@@ -20,13 +20,21 @@
    console.log(`Total cost: $${totalCost}`); 
    //console.log(`Cost of food: $${cost + tax}`); 
 
+  
    let hour = new Date(); 
     if (hour >= 6 && hour <= 12) {
-      console.log('Good morning!');
+      console.log(`Good morning, ${myName}!`);
    } else if (hour >= 13 && hour <= 17) {
-    console.log('Good afternoon!');
+    console.log(`Good afternoon, ${myName}`);
    } else {
-    console.log('Good night!'); 
+    console.log(`Good evening, ${myName}!`); 
+   }
+
+   let age = 103;
+   if (age <= 6 || age >= 65) {
+    console.log(`As you are ${age}, you qualify for the discount!`); 
+   } else {
+    console.log(`I'm sorry, as your age is ${age}, you do not qualify for the discount`); 
    }
   </script>
 </body>
