@@ -19,6 +19,15 @@
    console.log(`Tax (10%): $${tax}`);
    console.log(`Total cost: $${totalCost}`); 
    //console.log(`Cost of food: $${cost + tax}`); 
+
+   let hour = new Date(); 
+    if (hour >= 6 && hour <= 12) {
+      console.log('Good morning!');
+   } else if (hour >= 13 && hour <= 17) {
+    console.log('Good afternoon!');
+   } else {
+    console.log('Good night!'); 
+   }
   </script>
 </body>
 </html>
