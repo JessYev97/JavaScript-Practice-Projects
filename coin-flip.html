@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1> Coin Flip Game</h1>
-<button onclick="
+<!-- <button onclick="
   let randomNumber = Math.random();
 let result = ''; 
     if (randomNumber < 0.5) {
@@ -18,10 +18,16 @@ let result = '';
     }
 
     alert(result); 
-">Flip me!</button>
+">Flip me!</button> --> 
+
 
   <script>
-
+let randomNumber = Math.random();
+if (randomNumber > 0.5) {
+  console.log('heads');
+} else {
+  console.log('tails');
+}
 
   </script>
 </body>
