@@ -22,12 +22,20 @@ let result = '';
 
 
   <script>
+let guess = 'heads'; 
+let result = '';
 let randomNumber = Math.random();
 if (randomNumber > 0.5) {
-  console.log('heads');
+  result = 'heads';
 } else {
-  console.log('tails');
+  result = 'tails';
 }
+if (guess === result) {
+  console.log('you win!');
+} else {
+  console.log('You lose');
+}
+
 
   </script>
 </body>
