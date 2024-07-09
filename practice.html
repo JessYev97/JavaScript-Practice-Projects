@@ -30,11 +30,13 @@
     console.log(`Good evening, ${myName}!`); 
    }
 
+   const isHoliday = false;
    let age = 103;
-   if (age <= 6 || age >= 65) {
-    console.log(`As you are ${age}, you qualify for the discount!`); 
-   } else {
-    console.log(`I'm sorry, as your age is ${age}, you do not qualify for the discount`); 
+   if ((age <= 6 || age >= 65) && !isHoliday) {
+    console.log(` you qualify for the discount!`); 
+   } 
+   else {
+    console.log(`I'm sorry, you do not qualify for the discount`); 
    }
   </script>
 </body>
