@@ -25,7 +25,7 @@ let result = '';
 let guess = 'heads'; 
 let result = '';
 let randomNumber = Math.random();
-if (randomNumber > 0.5) {
+/*if (randomNumber > 0.5) {
   result = 'heads';
 } else {
   result = 'tails';
@@ -34,9 +34,10 @@ if (guess === result) {
   console.log('you win!');
 } else {
   console.log('You lose');
-}
+}*/
 
-
+(randomNumber > 0.5 ? result = 'tails': result = 'heads');
+(guess === result ? console.log('you win!'): console.log('you lose')); 
   </script>
 </body>
 </html>
