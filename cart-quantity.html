@@ -46,8 +46,15 @@
     }
     ">Remove from cart</button>
 
+    <button onclick="
+      if (cartQuantity -2 < 0) {
+        alert ('not enough items in cart');
+      } else {
+        cartQuantity = cartQuantity -2;
+      }
+    ">-2</button>
     <script>
-      let cartQuantity = 0; 
+      let cartQuantity = 0;  
       
     </script>
   </body>
