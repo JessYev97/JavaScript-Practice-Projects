@@ -9,11 +9,11 @@
   
 
   <script>
-
+    /*
     let myName = 'Jess';
     console.log(`my name is: ${myName}`); 
     
-   /*let tax = ((500 + (300 * 2) + 900) * 0.1) / 100; 
+   let tax = ((500 + (300 * 2) + 900) * 0.1) / 100; 
    let cost = (500 + (300 * 2) + 900) / 100; 
    let totalCost = cost + tax; 
    console.log(`Tax (10%): $${tax}`);
@@ -38,7 +38,7 @@
    else {
     console.log(`I'm sorry, you do not qualify for the discount`); 
    }
-*/ 
+
 function greet(name, other){
    name = 'Lily'
    other = 'Linda'
@@ -46,7 +46,31 @@ function greet(name, other){
   {console.log(`hello, ${name} and ${other}!`) }
 }
 greet();
+*/
+function convertToFahrenheit(celsius) {
+  return (celsius * 9 / 5) + 32;
 
+}
+  console.log(convertToFahrenheit(25));
+
+function convertToCelsius(fahrenheit) {
+  return (fahrenheit - 32) * 5 / 9;
+}
+  console.log(convertToCelsius(86)); 
+
+
+function convertTemperature(degrees, unit) {
+  if (unit === 'C') {
+    const result = convertToFahrenheit(degrees);
+    return `${result}F`; 
+  } else if (unit === 'F') {
+    const result = convertToCelsius(degrees);
+     return `${result}C`; 
+  }
+  
+}
+console.log(convertTemperature(25, 'C')); 
+console.log(convertTemperature(86, 'F'));
   </script>
 </body>
 </html>
